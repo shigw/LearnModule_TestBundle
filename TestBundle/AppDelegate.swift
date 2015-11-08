@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import BundleTest01
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -16,6 +17,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
+        var mTestGetTime : TestGetTime = TestGetTime()
+        print("TestTime:\(mTestGetTime.getCurrentTimeString())")
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
