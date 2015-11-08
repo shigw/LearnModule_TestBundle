@@ -10,21 +10,7 @@
 		B031D1891BEEEC8F00C8A430 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B031D1881BEEEC8F00C8A430 /* AppDelegate.swift */; };
 		B031D18B1BEEEC8F00C8A430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B031D18A1BEEEC8F00C8A430 /* Assets.xcassets */; };
 		B031D18E1BEEEC8F00C8A430 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B031D18C1BEEEC8F00C8A430 /* MainMenu.xib */; };
-		B031D1F11BEF1F6400C8A430 /* libBundleTest01.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B031D1F01BEF1F6400C8A430 /* libBundleTest01.dylib */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		B031D1C11BEEF8F900C8A430 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B031D1851BEEEC8F00C8A430 /* TestBundle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestBundle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,7 +18,6 @@
 		B031D18A1BEEEC8F00C8A430 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B031D18D1BEEEC8F00C8A430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B031D18F1BEEEC8F00C8A430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B031D1F01BEF1F6400C8A430 /* libBundleTest01.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libBundleTest01.dylib; path = BundleTest/libBundleTest01.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +25,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B031D1F11BEF1F6400C8A430 /* libBundleTest01.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,7 +34,6 @@
 		B031D17C1BEEEC8F00C8A430 = {
 			isa = PBXGroup;
 			children = (
-				B031D1F01BEF1F6400C8A430 /* libBundleTest01.dylib */,
 				B031D1871BEEEC8F00C8A430 /* TestBundle */,
 				B031D1861BEEEC8F00C8A430 /* Products */,
 			);
@@ -85,7 +68,6 @@
 				B031D1811BEEEC8F00C8A430 /* Sources */,
 				B031D1821BEEEC8F00C8A430 /* Frameworks */,
 				B031D1831BEEEC8F00C8A430 /* Resources */,
-				B031D1C11BEEF8F900C8A430 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,12 +181,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LIBRARY_SEARCH_PATHS = "$(SOURCE_ROOT)/BundleTest";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				SWIFT_INCLUDE_PATHS = "$(SOURCE_ROOT)/BundleTest";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -239,11 +219,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LIBRARY_SEARCH_PATHS = "$(SOURCE_ROOT)/BundleTest";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SWIFT_INCLUDE_PATHS = "$(SOURCE_ROOT)/BundleTest";
 			};
 			name = Release;
 		};
@@ -254,10 +232,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TestBundle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/BundleTest",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = cffex.TestBundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -270,10 +244,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TestBundle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/BundleTest",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = cffex.TestBundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -298,7 +268,6 @@
 				B031D1941BEEEC8F00C8A430 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
